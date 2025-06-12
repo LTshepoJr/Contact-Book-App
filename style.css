@@ -1,0 +1,50 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+form {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3em 0;
+}
+
+form label:hover {
+  cursor: pointer;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid;
+  padding: 1em 2em;
+  border-radius: 2em;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+button:active {
+  background-color: #bcbcbc;
+  color: white;
+}
+
+#apiKey {
+  height: 1.5em;
+  border-radius: 2em;
+  font-size: 1em;
+  padding: 0 1em;
+  border: 1px solid;
+}
+
+#submitApiKey {
+  margin-top: 1.3em;
+}
