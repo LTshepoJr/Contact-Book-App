@@ -1,3 +1,5 @@
+const rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
+
 const checkApiKey = () => {
   if (!localStorage.getItem("apiKey")) {
     window.open("enter-api-key.html", "_self");
@@ -5,4 +7,4 @@ const checkApiKey = () => {
   return localStorage.getItem("apiKey");
 };
 
-checkApiKey();
+let apiKey = checkApiKey();
