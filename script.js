@@ -9,7 +9,6 @@ window.addEventListener("load", () => {
       return response.json();
     })
     .then((data) => {
-      //   displayOutput(data);
       data.forEach(({ avatar, firstname, email, lastname, mobile, id }) => {
         const contact = `<div id="contact">
           <img
@@ -29,6 +28,10 @@ window.addEventListener("load", () => {
 
 refresh.addEventListener("click", () => {
   location.reload();
+});
+
+addContact.addEventListener("click", () => {
+  window.open("add-contact.html", "_self");
 });
 
 logOut.addEventListener("click", () => {
