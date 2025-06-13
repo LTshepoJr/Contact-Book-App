@@ -3,19 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-}
-
-form {
-  font-size: 1.3em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.3em 0;
-}
-
-form label:hover {
-  cursor: pointer;
+  text-align: center;
 }
 
 button {
@@ -37,6 +25,25 @@ button:active {
   color: white;
 }
 
+h1 {
+  text-decoration: underline;
+}
+
+/***************************************** Login design ***********************************************/
+
+form {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3em 0;
+}
+
+form label:hover {
+  cursor: pointer;
+}
+
 #apiKey {
   height: 1.5em;
   border-radius: 2em;
@@ -47,4 +54,33 @@ button:active {
 
 #submitApiKey {
   margin-top: 1.3em;
+}
+
+/***************************************** Contact design ***********************************************/
+
+#contact {
+  display: flex;
+  background-color: #bcbcbc;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.9em 1em;
+  padding: 0.4em 1em;
+  border-radius: 2em;
+  font-size: 0.8em;
+}
+
+#contact img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding-right: 0.5em;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons button {
+  margin: 0 0.8em;
 }
