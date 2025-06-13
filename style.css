@@ -44,7 +44,9 @@ form label:hover {
   cursor: pointer;
 }
 
-#apiKey {
+#apiKey,
+.border-contact {
+  margin-top: 0.3em;
   height: 1.5em;
   border-radius: 2em;
   font-size: 1em;
@@ -83,4 +85,16 @@ form label:hover {
 
 #buttons button {
   margin: 0 0.8em;
+}
+
+/***************************************** Add contact design ***********************************************/
+
+.border-contact,
+#choose-avatar {
+  margin: 0.7em 0;
+  display: block;
+}
+
+#choose-avatar {
+  font-size: 0.8em;
 }
