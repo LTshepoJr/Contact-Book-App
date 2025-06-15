@@ -1,5 +1,5 @@
 const contactBook = document.getElementById("contact-book");
-const addContactSubmit = document.getElementById("add-contact-submit");
+const addContact = document.getElementById("add-contact");
 
 const homeLink = () => {
   window.open("index.html", "_self");
@@ -9,8 +9,7 @@ contactBook.addEventListener("click", () => {
   homeLink();
 });
 
-addContactSubmit.addEventListener("click", (e) => {
-  e.preventDefault();
+addContact.addEventListener("click", () => {
   const contactForm = document.getElementById("form-contact");
   const newForm = new FormData(contactForm);
   newForm.append("apiKey", apiKey);
