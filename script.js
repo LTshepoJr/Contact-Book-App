@@ -13,7 +13,11 @@ window.addEventListener("load", () => {
     })
     .then((data) => {
       data.forEach(({ avatar, firstname, email, lastname, mobile, id }) => {
-        const contact = `<div id="contact">
+        const contact = `<div
+          id="contact"
+          class="edit-contact"
+          data-id="${id}"
+        >
           <img
             src="${rootPath}controller/uploads/${avatar}"
             alt="${firstname} ${lastname} ${id}"
@@ -25,6 +29,12 @@ window.addEventListener("load", () => {
           </div>
         </div>`;
         contactWrapper.insertAdjacentHTML("beforeend", contact);
+      });
+      document.querySelectorAll(".edit-contact").forEach((contact) => {
+        contact.addEventListener("click", () => {
+          const contactId = contact.dataset.id;
+          window.open(`edit-contact.html?id=${contactId}`, "_self");
+        });
       });
     })
     .catch((error) => {
