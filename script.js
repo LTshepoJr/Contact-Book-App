@@ -4,7 +4,7 @@ const logOut = document.getElementById("log-out");
 const contactWrapper = document.getElementById("contact-wrapper");
 
 window.addEventListener("load", () => {
-  fetch(rootPath + "controller/get-contacts/")
+  fetch(`${rootPath}controller/get-contacts/`)
     .then((response) => {
       return response.json();
     })

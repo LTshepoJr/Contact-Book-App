@@ -6,7 +6,7 @@ function setApiKey(e) {
   e.preventDefault();
 
   const apiKey = document.getElementById("apiKey").value;
-  fetch(rootPath + "controller/api-key/?apiKey=" + apiKey)
+  fetch(`${rootPath}controller/api-key/?apiKey=${apiKey}`)
     .then((response) => {
       return response.text();
     })
