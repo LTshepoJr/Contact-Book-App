@@ -7,4 +7,4 @@ const checkApiKey = () => {
   return localStorage.getItem("apiKey");
 };
 
-let apiKey = checkApiKey();
+const apiKey = checkApiKey();

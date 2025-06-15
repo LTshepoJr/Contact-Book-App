@@ -6,6 +6,9 @@ const contactWrapper = document.getElementById("contact-wrapper");
 window.addEventListener("load", () => {
   fetch(`${rootPath}controller/get-contacts/`)
     .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status ${response.status}`);
+      }
       return response.json();
     })
     .then((data) => {
@@ -23,6 +26,9 @@ window.addEventListener("load", () => {
         </div>`;
         contactWrapper.insertAdjacentHTML("beforeend", contact);
       });
+    })
+    .catch((error) => {
+      console.error(`Error: ${error}`);
     });
 });
 
