@@ -69,6 +69,8 @@ form label:hover {
   padding: 0.4em 1em;
   border-radius: 2em;
   font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
 #contact img {
@@ -76,6 +78,14 @@ form label:hover {
   height: 90px;
   border-radius: 50%;
   padding-right: 0.5em;
+}
+
+#contact:hover {
+  background-color: #878787;
+}
+
+#contact:active {
+  border: 2px solid black;
 }
 
 #buttons {
