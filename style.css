@@ -29,6 +29,12 @@ h1 {
   text-decoration: underline;
 }
 
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 /***************************************** Login design ***********************************************/
 
 form {
@@ -107,4 +113,15 @@ form label:hover {
 
 #choose-avatar {
   font-size: 0.8em;
+}
+
+/***************************************** Edit contact design ***********************************************/
+
+#edit-choose-avatar,
+#home {
+  margin: 0.9em 0;
+}
+
+#avatar-image {
+  margin-top: 1em;
 }
